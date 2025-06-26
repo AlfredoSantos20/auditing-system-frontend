@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --color-primary: #f0b90b;
+  --color-dark: #0c0e12;
+  --color-light-dark: #151515;
+}
+
+.bg-grid-light {
+  background-color: #eff6ff; 
+  background-image: 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-position: top left; 
+  background-attachment: fixed; 
+}
+
+*{ font-family: "Poppins", sans-serif;}
+
+.ant-menu-dark .ant-menu-submenu-title:hover,
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+
+.dark-ant-table .ant-table-thead > tr > th {
+background-color: #111827; 
+  color: white;
+  font-weight: 600;
+  border-color: #374151;
+}
+
