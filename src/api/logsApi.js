@@ -14,7 +14,7 @@ export const logActivity = async ({ usernameId, activity }) => {
 
 export const getAllLogs = async () => {
     try {
-        const response = await api.get("/activity/get-logs");
+        const response = await api.post("/activity/get-logs");
         return response.data
     } catch (error) {
         throw new Error("Invalid Credentials")
