@@ -6,6 +6,8 @@ import ReusableTable from '../../components/ReusableTable';
 import Navbar from '../Navbar/Navbar';
 import { useNavigate } from 'react-router-dom';
 
+// ...imports stay the same
+
 const Dashboard = () => {
   const [sections, setSections] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -24,14 +26,16 @@ const Dashboard = () => {
     navigate('/login');
   };
 
+  // ✅ FIXED: Update filterKeyword directly from Navbar
   const handleSectionChange = (section) => {
     setSectionTitle(section);
     setFilterKeyword(section === 'ALL SECTIONS' ? '' : section);
   };
 
+  // ✅ FIXED: Strict filtering (startsWith instead of includes)
   const filteredSections = filterKeyword
     ? sections.filter((sec) =>
-        sec.sectionName?.toLowerCase().includes(filterKeyword.toLowerCase())
+        sec.sectionName?.toLowerCase().startsWith(filterKeyword.toLowerCase())
       )
     : sections;
 
@@ -224,3 +228,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
