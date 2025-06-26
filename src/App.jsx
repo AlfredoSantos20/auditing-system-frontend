@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/public/Login';
-import Dashboard from './pages/private/dashboard';
+
 import PrivateRoute from './components/PrivateRoute';
+import Dashboard from './pages/private/Dashboard';
+
 
 const App = () => {
   return (
