@@ -6,7 +6,6 @@ import ReusableTable from '../../components/ReusableTable';
 import Navbar from '../Navbar/Navbar';
 import { useNavigate } from 'react-router-dom';
 
-// ...imports stay the same
 
 const Dashboard = () => {
   const [sections, setSections] = useState([]);

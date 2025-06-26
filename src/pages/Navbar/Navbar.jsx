@@ -167,7 +167,7 @@ const Navbar = ({ children, onSectionChange, onLogout }) => {
                 
             }}
             >
-            {isMobile ? 'MAAP' : 'MAAP HERZIVANES CLASS OF 2028'}
+            {isMobile ? 'MAAP' : 'MAAP HERZIVANEANS CLASS OF 2028'}
             </h1>
 
           </div>
